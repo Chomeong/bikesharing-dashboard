@@ -15,14 +15,14 @@ sns.set(style='dark')
 # In[3]:
 
 
-day_df = pd.read_csv("day_clean.csv")
+day_df = pd.read_csv("dashboard/day_clean.csv")
 day_df.head()
 
 
 # In[4]:
 
 
-hour_df = pd.read_csv("hour_clean.csv")
+hour_df = pd.read_csv("dashboard/hour_clean.csv")
 hour_df.head()
 
 
@@ -140,7 +140,7 @@ max_date = day_df["dteday"].max()
  
 with st.sidebar:
     # Menambahkan logo perusahaan
-    st.image("logo_freepik.jpg")
+    st.image("dashboard/logo_freepik.jpg")
     
     # Mengambil start_date & end_date dari date_input
     start_date, end_date = st.date_input(
